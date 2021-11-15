@@ -34,19 +34,26 @@
         passes through it, dividing it into 2 pieces of equal areas. Let a line segment with
         endpoints <em>P1</em> and <em>P2</em>, divide the polygon into 2 pieces called <em>L</em> and <em>R</em>, the left and
         right pieces. Here <em>P1</em> and <em>P1</em> lie on the boundary of the polygon.
-        <img src="/Images/KoronePat.png" alt="Example of fair partitioning for n = 2 (1)">
+    </p>
+    <p>
+        <img src="/Images/KoronePat.png" alt="Example of fair partitioning for n = 2">
+    </p>
+    <p>
         Assume that the perimeter of <em>L</em> is greater than the perimeter of <em>R</em>. 
         Now, we slowly rotate this segment in anti-clockwise direction,
         maintaining the areas on both side. Because we are moving <em>P1</em> and <em>P2</em> continuously,
         the perimeters of <em>L</em> and <em>R</em> are also changing continuously.
     </p>
     <p>
-        
+        <img src="/Images/KoronePat.png" alt="Continous change of L and R">
     </p>
     <p>
-        
-        <img src="/Images/KoronePat.png" alt="Example of fair partitioning for n = 2 (2)">
-        <img src="/Images/KoronePat.png" alt="Example of fair partitioning for n = 2 (3)">
+        At some point <em>P1</em> will reach the original position of <em>P2</em>, while <em>P2</em> will reach the
+        original position of <em>P1</em>. But in this case the perimeter of <em>L</em> is now smaller than the
+        perimeter of <em>R</em>. This implies that at some point in the rotation, both perimeters of
+        <em>L</em> and <em>R</em> must have been equal. Therefore, it is possible to obtain a fair partition of
+        a convex polygon for <em>n</em> = 2.<br />
+        The computation time of 
     </p>
     
     
