@@ -53,7 +53,7 @@ var triangleEdge = [];
 var currentPolygon;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1000, 1000);
 
   // Put setup code here
   fill("black");
@@ -149,8 +149,3 @@ function mousePressed() {
     points.push(new Point(mouseX, mouseY));
   }
 }
-
-// This Redraws the Canvas when resized
-windowResized = function () {
-  resizeCanvas(windowWidth, windowHeight);
-};
