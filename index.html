@@ -52,15 +52,40 @@
         original position of <em>P1</em>. But in this case the perimeter of <em>L</em> is now smaller than the
         perimeter of <em>R</em>. This implies that at some point in the rotation, both perimeters of
         <em>L</em> and <em>R</em> must have been equal. Therefore, it is possible to obtain a fair partition of
-        a convex polygon for <em>n</em> = 2.<br />
+        a convex polygon for <em>n</em> = 2.
+    </p>
+    <h3>Algorithmic approach</h3>
+    <p>
+        <br />
         The computation time of 
     </p>
     
     
     <h2>Proof for <em>n</em> = 2<sup>k</sup></h2>
     <p>
+        The algorithm tries to find a fair partition by first finding a single area bisector
+        of the polygon that divides the polygon into its left and right parts. Once it
+        has the area bisector, it is rotated around the polygon until both the left and
+        right parts have equal perimeters too. This will give us a fair partition that
+        divides the polygon into 2 fair pieces. To find the pieces for <em>n</em> = 2<sup>k</sup> apply this
+        algorithm recursively for each of the partitions.<br />
+        The computation time is <em>O((2n)<sup>k</sup>)</em>.
+    </p>
+    <p>
         
     </p>
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
+    
+    
+    
     
     <h2>Code</h2>
     
