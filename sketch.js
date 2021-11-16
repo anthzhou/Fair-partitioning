@@ -53,7 +53,7 @@ var triangleEdge = [];
 var currentPolygon;
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(100, 100);
 
   // Put setup code here
   fill("black");
