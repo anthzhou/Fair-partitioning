@@ -61,7 +61,7 @@
     </p>
     
     
-    <h2>Proof for <em>n</em> = 2<sup>k</sup></h2>
+    <h2>Algorithmic approach for <em>n</em> = 2<sup>k</sup></h2>
     <p>
         The algorithm tries to find a fair partition by first finding a single area bisector
         of the polygon that divides the polygon into its left and right parts. Once it
@@ -71,8 +71,13 @@
         algorithm recursively for each of the partitions.<br />
         The computation time is <em>O((2n)<sup>k</sup>)</em>.
     </p>
+    <h3>Finding the area bisector</h3>
     <p>
-        
+        To find the first area bisector, the polygon is triangulated.
+        Looking at each triangle boundary from left to right, find the boundary at
+        which the area of the triangles on the left side becomes greater than the ones
+        on the right side. When this happens we know that the area bisector lies
+        somewhere between the current boundary and the previous one.
     </p>
     <p>
         
