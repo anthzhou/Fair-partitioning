@@ -152,5 +152,5 @@ function mousePressed() {
 
 // This Redraws the Canvas when resized
 windowResized = function () {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(700, 700);
 };
