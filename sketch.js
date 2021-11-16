@@ -51,13 +51,9 @@ function isConvex(index) {
 var points = [];
 var triangleEdge = [];
 var currentPolygon;
-var cnv;
 
 function setup() {
-  cnv = createCanvas(1000, 1000);
-  
-  var y = (windowHeight - height) / 2;
-  cnv.position(0, y);
+  createCanvas(windowWidth, windowHeight);
 
   // Put setup code here
   fill("black");
@@ -153,3 +149,8 @@ function mousePressed() {
     points.push(new Point(mouseX, mouseY));
   }
 }
+
+// This Redraws the Canvas when resized
+windowResized = function () {
+  resizeCanvas(windowWidth, windowHeight);
+};
