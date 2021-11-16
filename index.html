@@ -56,18 +56,18 @@
     </p>
     <h3>Algorithmic approach</h3>
     <p>
-        <br />
-        The computation time of 
+        The algorithm tries to find a fair partition by first finding a single area bisector
+        of the polygon that divides the polygon into its left and right parts. Once it
+        has the area bisector, it is rotated around the polygon until both the left and
+        right parts have equal perimeters too. This will give us a fair partition that
+        divides the polygon into 2 fair pieces.<br />
+        The computation time of <em>O((n)</em>.
     </p>
     
     
     <h2>Algorithmic approach for <em>n</em> = 2<sup>k</sup></h2>
     <p>
-        The algorithm tries to find a fair partition by first finding a single area bisector
-        of the polygon that divides the polygon into its left and right parts. Once it
-        has the area bisector, it is rotated around the polygon until both the left and
-        right parts have equal perimeters too. This will give us a fair partition that
-        divides the polygon into 2 fair pieces. To find the pieces for <em>n</em> = 2<sup>k</sup> apply this
+        To find the pieces for <em>n</em> = 2<sup>k</sup>, we apply the
         algorithm recursively for each of the partitions.<br />
         The computation time is <em>O((2n)<sup>k</sup>)</em>.
     </p>
