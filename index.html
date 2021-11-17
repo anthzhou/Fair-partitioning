@@ -26,7 +26,7 @@
         They introduced the idea of fair convex partitions of polygons and proposed that it
         is possible to divide a polygon fairly for any number of partitions.
         Later on, they provided proofs for <em>n</em> = 2 and <em>n</em> = 4 and discuss proofs for higher powers of 2.
-        Later, a paper written by Bogdan Armaselu and Ovidiu Daescuthat describes a method for finding fair partitions when <em>n</em> = 2<sup>k</sup>.
+        Later, a paper written by Bogdan Armaselu and Ovidiu Daescuthat describes an algorithm for finding fair partitions when <em>n</em> = 2 and <em>n</em> = 2<sup>k</sup>.
     </p>
     
     <h2>Proof for <em>n</em> = 2</h2>
@@ -84,6 +84,21 @@
         <img src="/Images/2.png" alt="Partitioning of P into P1,P2 by edge e" style="width:400px;height:400px;">
         <img src="/Images/3.png" alt="Line e splits P into P1 and P2, line L is an area bisector of P" style="width:400px;height:400px;">
     </p>
+    <h3>Updating the area bisector</h3>
+    <p>
+        Once we have an area bisector <em>L</em> with endpoints <em>p</em> and <em>q</em>, we need to update it
+        till the left and right pieces have the same perimeter. There are 4 possibilities for the new area bisector.
+    </p>
+    <p>
+        <img src="/Images/4.png" alt="Possibilities for the new area bisector(1)" style="width:800px;height:400px;">
+        <img src="/Images/5.png" alt="Possibilities for the new area bisector(2)" style="width:800px;height:400px;">
+    </p>
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
     <p>
         
     </p>
@@ -95,9 +110,9 @@
     
     
     <h2>Code</h2>
-    <p>
+    <p><!--
         <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-        <script src="sketch.js"></script>
+        <script src="sketch.js"></script>-->
     </p>
     
     
