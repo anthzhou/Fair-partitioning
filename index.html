@@ -55,7 +55,7 @@
         <em>L</em> and <em>R</em> must have been equal. Therefore, it is possible to obtain a fair partition of
         a convex polygon for <em>n</em> = 2.
     </p>
-    <h3>Algorithmic approach</h3>
+    <h2>Algorithmic approach for <em>n</em> = 2</h2>
     <p>
         The algorithm tries to find a fair partition by first finding a single area bisector
         of the polygon that divides the polygon into its left and right parts. Once it
@@ -66,12 +66,6 @@
     </p>
     
     
-    <h2>Algorithmic approach for <em>n</em> = 2<sup>k</sup></h2>
-    <p>
-        To find the pieces for <em>n</em> = 2<sup>k</sup>, we apply the
-        algorithm for finding <em>n</em> = 2 recursively for each of the partitions.<br />
-        The computation time is <em>O</em>((2<em>n</em>)<em><sup>k</sup>)</em>.
-    </p>
     <h3>Finding the area bisector</h3>
     <p>
         To find the first area bisector, the polygon is triangulated.
@@ -98,17 +92,14 @@
         sides and update the area bisector to the one with the least difference. To find
         the 4 area bisectors we do something similar to what we did to find <em>q</em>.
     </p>
-    <p>
-        
-    </p>
-    <p>
-        
-    </p>
-    <p>
-        
-    </p>
     
     
+    <h2>Algorithmic approach for <em>n</em> = 2<sup>k</sup></h2>
+    <p>
+        To find the pieces for <em>n</em> = 2<sup>k</sup>, we apply the
+        algorithm for finding <em>n</em> = 2 recursively for each of the partitions.<br />
+        The computation time is <em>O</em>((2<em>n</em>)<em><sup>k</sup>)</em>.
+    </p>
     
     
     <h2>Code</h2>
