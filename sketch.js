@@ -1,5 +1,6 @@
 /* eslint-disable no-undef, no-unused-vars */
 
+
 class Point {
   constructor(x, y) {
     this.x = x;
