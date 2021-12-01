@@ -43,12 +43,12 @@ function draw() {
   );
   if (points.length < 3) {
     fill("red");
-    text("You need at least 3 points.", 650, 50);
+    text("You need at least 3 points.", 750, 50);
     fill("black");
   } else {
     if (isNotConvex(points.length - 2)) {
       fill("red");
-      text("Polygon drawn is not convex.", 650, 50);
+      text("Polygon drawn is not convex.", 750, 50);
       fill("black");
       isConvex = false;
     }
@@ -78,6 +78,7 @@ function isNotConvex(index) {
 }
 
 function triangulate(k) {
+  text(k, 750, 100);
   if (points.length > 3 && isConvex) {
     for (let index = 0; index < k - 1; index++) {
       fairParition();
