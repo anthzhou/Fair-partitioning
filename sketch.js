@@ -1,26 +1,8 @@
-/* eslint-disable no-undef, no-unused-vars */
-
 class Point {
   constructor(x, y) {
     this.x = x;
     this.y = y;
   }
-}
-
-function computeDeterminant(point1, point2, point3) {
-  //Orientation determinant
-  return (
-    point1.x * (point2.y - point3.y) -
-    point1.y * (point2.x - point3.x) +
-    (point2.x * point3.y - point3.x * point2.y)
-  );
-}
-
-function isNotConvex(index) {
-  // If left turn, vertex is convex
-  return (
-    computeDeterminant(points[index - 1], points[index], points[index + 1]) > 0
-  );
 }
 
 let canvas;
@@ -34,14 +16,6 @@ function setup() {
   fill("black");
   points = [];
   isConvex = true;
-}
-
-function triangulate(k) {
-  if (points.length > 3 && isConvex) {
-    for (let index = 0; index < k - 1; index++) {
-      fairParition();
-    }
-  }
 }
 
 function draw() {
@@ -84,5 +58,29 @@ function draw() {
 function mousePressed() {
   if (mouseY > 135) {
     points.push(new Point(mouseX, mouseY));
+  }
+}
+
+function computeDeterminant(point1, point2, point3) {
+  //Orientation determinant
+  return (
+    point1.x * (point2.y - point3.y) -
+    point1.y * (point2.x - point3.x) +
+    (point2.x * point3.y - point3.x * point2.y)
+  );
+}
+
+function isNotConvex(index) {
+  // If left turn, vertex is convex
+  return (
+    computeDeterminant(points[index - 1], points[index], points[index + 1]) > 0
+  );
+}
+
+function triangulate(k) {
+  if (points.length > 3 && isConvex) {
+    for (let index = 0; index < k - 1; index++) {
+      fairParition();
+    }
   }
 }
