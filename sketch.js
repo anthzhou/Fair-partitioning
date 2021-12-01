@@ -56,7 +56,7 @@ function draw() {
 }
 
 function mousePressed() {
-  if (mouseY > 135 && mouseX > 0 && mouseY < 560) {
+  if (mouseY > 110 && mouseX > 0 && mouseY < 920) {
     points.push(new Point(mouseX, mouseY));
   }
 }
