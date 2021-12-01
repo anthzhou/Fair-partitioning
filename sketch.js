@@ -23,22 +23,15 @@ function isNotConvex(index) {
   );
 }
 
-var points = [];
-var isConvex = true;
+let canvas;
+let points = [];
+let isConvex = true;
 
 function setup() {
   canvas = createCanvas(document.getElementById("canvasContainer").offsetWidth, windowHeight)
   canvas.parent("canvasContainer");
 
-  // Put setup code here
   fill("black");
-  textSize(40);
-  button1 = createButton("Partition in polygon");
-  button1.position(30, 110);
-  button1.mousePressed(triangulate);
-  button2 = createButton("Clear");
-  button2.position(190, 110);
-  button2.mousePressed(setup);
   points = [];
   isConvex = true;
 }
@@ -93,8 +86,3 @@ function mousePressed() {
     points.push(new Point(mouseX, mouseY));
   }
 }
-
-// This Redraws the Canvas when resized
-windowResized = function () {
-  resizeCanvas(windowWidth, windowHeight);
-};
