@@ -78,7 +78,6 @@ function isNotConvex(index) {
 }
 
 function triangulate(k) {
-  text(k, 750, 100);
   if (points.length > 3 && isConvex) {
     for (let index = 0; index < k - 1; index++) {
       fairParition();
