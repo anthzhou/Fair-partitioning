@@ -43,12 +43,12 @@ function draw() {
   );
   if (points.length < 3) {
     fill("red");
-    text("You need at least 3 points.", 500, 50);
+    text("You need at least 3 points.", 650, 50);
     fill("black");
   } else {
     if (isNotConvex(points.length - 2)) {
       fill("red");
-      text("Polygon drawn is not convex.", 500, 50);
+      text("Polygon drawn is not convex.", 650, 50);
       fill("black");
       isConvex = false;
     }
