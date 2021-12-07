@@ -166,19 +166,16 @@ function partition2() {
     R.push(points[0]);
 
     //update area bissector until fair partition
-    let d;
     if (perimeter(L) > perimeter(R)) {
-      d = -0.1;
       while (perimeter(L) > perimeter(R)) {
-        area_bisector.move(d);
+        area_bisector.move(-0.1);
         intersection = area_bisector.get_intersection(l);
         L.splice(-1, 1, intersection);
         R.splice(0, 1, intersection);
       }
     } else {
-      d = 0.1;
       while (perimeter(L) < perimeter(R)) {
-        area_bisector.move(d);
+        area_bisector.move(0.1);
         intersection = area_bisector.get_intersection(l);
         L.splice(-1, 1, intersection);
         R.splice(0, 1, intersection);
