@@ -65,7 +65,10 @@
             has the area bisector, it is rotated around the polygon until both the left and
             right parts have equal perimeters too. This will give us a fair partition that
             divides the polygon into 2 fair pieces.<br />
-            The computation time is <em>O</em>(<em>n</em>).
+            Because the polygon is convex, it can be triangulated in <em>O</em>(<em>n</em>) time. 
+            The area bisscetor can be found in <em>O</em>(<em>n</em>) time. 
+            And the updating takes constant time and it may be called <em>O</em>(<em>n</em>) times.<br />
+            Thus, the computation time is <em>O</em>(<em>n</em>).
         </p>
 
 
@@ -106,7 +109,7 @@
         <p>
             To find the pieces for <em>n</em> = 2<sup>k</sup>, we apply the
             algorithm for finding <em>n</em> = 2 recursively for each of the partitions.<br />
-            The computation time is <em>O</em>((2<em>n</em>)<em><sup>k</sup>)</em>.
+            The computation time is <em>O</em>((2<em>n</em>)<em><sup>k</sup>)</em> because we recursively call the algorithm on each side up to 2<em>n</em> times.
         </p>
         
     <div id="inputContainer" style="float: left; width: 30%">
