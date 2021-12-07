@@ -28,7 +28,6 @@ class Triangle {
 
 class Line {
   constructor(a, b) {
-    this.index = lines.length;
     this.a = a;
     this.b = b;
     this.slope = calculate_slope(this.a, this.b);
