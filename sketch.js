@@ -69,13 +69,13 @@ class Line {
   }
 }
 
-let canvas;
-let intersection;
-let currentPolygon;
-let isConvex = true;
-let done = false;
-let points = [];
-let triangleEdge = []; //all triangle in the polygon
+var canvas;
+var intersection;
+var currentPolygon;
+var isConvex = true;
+var done = false;
+var points = [];
+var triangleEdge = []; //all triangle in the polygon
 
 function setup() {
   canvas = createCanvas(document.getElementById("canvasContainer").offsetWidth, windowHeight)
