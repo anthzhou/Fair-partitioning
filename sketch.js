@@ -76,7 +76,6 @@ let isConvex = true;
 let done = false;
 let points = [];
 let triangleEdge = []; //all triangle in the polygon
-let isConvex = true;
 
 function setup() {
   canvas = createCanvas(document.getElementById("canvasContainer").offsetWidth, windowHeight)
